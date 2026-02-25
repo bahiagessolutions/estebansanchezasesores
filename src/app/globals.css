@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-navy: #0f1f3d;
+  --color-navy-light: #1a3158;
+  --color-navy-dark: #091428;
+  --color-slate-dark: #334155;
+  --color-slate-medium: #64748b;
+  --color-pearl: #f8fafc;
+  --color-pearl-dark: #f1f5f9;
+  --color-gold: #c9a84c;
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #1e293b;
+}
+
+/* Honeypot anti-spam */
+.honeypot-field {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  pointer-events: none;
+  tab-index: -1;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Focus visible for accessibility */
+*:focus-visible {
+  outline: 2px solid #0f1f3d;
+  outline-offset: 2px;
+}
