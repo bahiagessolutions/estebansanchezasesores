@@ -60,8 +60,8 @@ export default function AvisoLegal() {
                 </li>
                 <li>
                   <strong className="font-semibold text-navy">Sitio web:</strong>{" "}
-                  <a href="https://estebansanchezasesores.es" className="text-navy underline underline-offset-2 hover:text-gold">
-                    estebansanchezasesores.es
+                  <a href="https://estebansanchezasesores.com" className="text-navy underline underline-offset-2 hover:text-gold">
+                    estebansanchezasesores.com
                   </a>
                 </li>
               </ul>
@@ -73,7 +73,7 @@ export default function AvisoLegal() {
                 2. Objeto
               </h2>
               <p className="mt-5 text-sm leading-relaxed text-slate-dark">
-                El presente aviso legal regula el uso y acceso al sitio web <strong className="font-semibold text-navy">estebansanchezasesores.es</strong> (en adelante, &quot;el sitio web&quot;), que Esteban Sánchez Asesores pone a disposición de los usuarios de Internet.
+                El presente aviso legal regula el uso y acceso al sitio web <strong className="font-semibold text-navy">estebansanchezasesores.com</strong> (en adelante, &quot;el sitio web&quot;), que Esteban Sánchez Asesores pone a disposición de los usuarios de Internet.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-slate-dark">
                 El acceso al sitio web atribuye la condición de usuario e implica la aceptación plena y sin reservas de todas y cada una de las disposiciones incluidas en este aviso legal.

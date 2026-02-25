@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.VERCEL_PROJECT_PRODUCTION_URL
       ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-      : "https://estebansanchezasesores.es"
+      : "https://estebansanchezasesores.com"
   ),
   title:
     "Esteban Sánchez Asesores | Asesoría Fiscal, Laboral y Contable en Chiclana de la Frontera",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
       "Asesoría fiscal, contable y laboral en Chiclana de la Frontera y la Bahía de Cádiz. Primera consulta gratuita.",
   },
   alternates: {
-    canonical: "https://estebansanchezasesores.es",
+    canonical: "https://estebansanchezasesores.com",
   },
   robots: {
     index: true,
@@ -104,8 +104,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "AccountingService",
               name: "Esteban Sánchez Asesores",
-              image: "https://estebansanchezasesores.es/portada.jpeg",
-              url: "https://estebansanchezasesores.es",
+              image: "https://estebansanchezasesores.com/portada.jpeg",
+              url: "https://estebansanchezasesores.com",
               telephone: "+34697519178",
               email: "estebansanchezasesores@gmail.com",
               description:
