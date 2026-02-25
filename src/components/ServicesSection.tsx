@@ -56,7 +56,7 @@ const services: Service[] = [
     features: [
       { text: "Nóminas, seguros sociales y convenios" },
       { text: "Gestión de contratos, altas, bajas e IT" },
-      { text: "Control horario digital (obligatorio)" },
+      { text: "Prevención de riesgos laborales" },
     ],
   },
   {
