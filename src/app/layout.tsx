@@ -10,7 +10,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://estebansanchezasesores.es"),
+  metadataBase: new URL(
+    process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : "https://estebansanchezasesores.es"
+  ),
   title:
     "Esteban Sánchez Asesores | Asesoría Fiscal, Laboral y Contable en Chiclana de la Frontera",
   description:
@@ -56,14 +60,12 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_ES",
     siteName: "Esteban Sánchez Asesores",
-    images: [{ url: "/portada.jpeg", width: 1200, height: 630, alt: "Esteban Sánchez Asesores — Asesoría en Chiclana de la Frontera, Cádiz" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Esteban Sánchez Asesores | Asesoría en Chiclana de la Frontera",
     description:
       "Asesoría fiscal, contable y laboral en Chiclana de la Frontera y la Bahía de Cádiz. Primera consulta gratuita.",
-    images: ["/portada.jpeg"],
   },
   alternates: {
     canonical: "https://estebansanchezasesores.es",
