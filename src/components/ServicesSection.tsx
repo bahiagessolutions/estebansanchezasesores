@@ -41,7 +41,7 @@ const services: Service[] = [
     icon: BookOpen,
     title: "Asesoría Contable y VERIFACTU",
     description:
-      "Tu contabilidad al día y sin errores. Llevanza de libros, cuentas anuales y balances con informes claros. Además, te adaptamos al nuevo sistema VERIFACTU de facturación electrónica verificable.",
+      "Tu contabilidad al día y sin errores. Llevanza de libros, balances e informes de gestión claros. Además, te adaptamos al nuevo sistema VERIFACTU de facturación electrónica verificable.",
     features: [
       { text: "Contabilidad financiera y cuentas anuales" },
       { text: "Informes de gestión personalizados" },
@@ -52,7 +52,7 @@ const services: Service[] = [
     icon: Users,
     title: "Asesoría Laboral",
     description:
-      "Gestión integral de tu equipo: nóminas, seguros sociales, contratos, altas y bajas. Incluimos la implantación del control horario digital obligatorio para tu empresa.",
+      "Gestión integral de tu equipo: nóminas, seguros sociales, contratos, altas y bajas. Te asesoramos en convenios colectivos y prevención de riesgos laborales.",
     features: [
       { text: "Nóminas, seguros sociales y convenios" },
       { text: "Gestión de contratos, altas, bajas e IT" },
@@ -74,7 +74,7 @@ const services: Service[] = [
     icon: Rocket,
     title: "Trámites Especiales",
     description:
-      "Constitución rápida de Sociedades Limitadas (SL), altas de autónomos en 24h y gestión experta de la Campaña de la Renta. Herencias, donaciones y gestiones ante cualquier organismo.",
+      "Gestionamos herencias, donaciones y sucesiones con eficacia y cercanía. Representación ante cualquier organismo público y obtención de certificados.",
     features: [
       { text: "Herencias, donaciones y sucesiones" },
       { text: "Gestiones ante organismos públicos" },
@@ -85,7 +85,7 @@ const services: Service[] = [
     icon: Monitor,
     title: "Transformación Digital",
     description:
-      "Modernizamos tu empresa: VERIFACTU, control horario digital, firma digital, gestión documental en la nube, páginas web profesionales, SEO y Google Business Profile.",
+      "Modernizamos tu empresa: control horario digital, firma digital, gestión documental en la nube, páginas web profesionales, SEO y Google Business Profile.",
     features: [
       { text: "Firma digital y certificado electrónico" },
       {
