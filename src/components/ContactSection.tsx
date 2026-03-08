@@ -16,6 +16,7 @@ import AnimatedSection from "./AnimatedSection";
 const serviceOptions = [
   "Asesoría Fiscal",
   "Asesoría Contable",
+  "Revisión Contable",
   "Asesoría Laboral",
   "Trámites Especiales",
   "Jurídico Mercantil",
@@ -53,9 +54,10 @@ export default function ContactSection() {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
     if (validationError) setValidationError("");
+    if (status !== "idle") setStatus("idle");
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
     // Honeypot check
@@ -80,9 +82,30 @@ export default function ContactSection() {
     }
 
     setStatus("sending");
+    setValidationError("");
 
-    // Simulate sending
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = (await response.json()) as {
+        error?: string;
+        missingEnvVars?: string[];
+      };
+
+      if (!response.ok) {
+        setStatus("error");
+        setValidationError(
+          result.error || "No se pudo enviar el mensaje. Inténtalo de nuevo."
+        );
+        return;
+      }
+
       setStatus("success");
       setFormData({
         nombre: "",
@@ -92,7 +115,12 @@ export default function ContactSection() {
         mensaje: "",
         honeypot: "",
       });
-    }, 1500);
+    } catch {
+      setStatus("error");
+      setValidationError(
+        "No se pudo enviar el mensaje. Revisa la conexión e inténtalo de nuevo."
+      );
+    }
   };
 
   return (

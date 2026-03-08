@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import {
   BarChart3,
   BookOpen,
+  FileSearch,
   Users,
   Rocket,
   Scale,
-  Monitor,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
@@ -32,8 +32,8 @@ const services: Service[] = [
     description:
       "Planificación y gestión fiscal proactiva. No nos limitamos a presentar tus modelos (IVA, IRPF, Sociedades). Estudiamos tu negocio para maximizar tu ahorro fiscal y te defendemos ante Hacienda.",
     features: [
-      { text: "Liquidaciones trimestrales y anuales" },
-      { text: "Planificación fiscal estratégica" },
+      { text: "Campaña de Renta y Patrimonio" },
+      { text: "Liquidaciones trimestrales, anuales y Planificación fiscal estratégica" },
       { text: "Defensa ante inspecciones y requerimientos de la AEAT" },
     ],
   },
@@ -52,22 +52,38 @@ const services: Service[] = [
     icon: Users,
     title: "Asesoría Laboral",
     description:
-      "Gestión integral de tu equipo: nóminas, seguros sociales, contratos, altas y bajas. Te asesoramos en convenios colectivos y prevención de riesgos laborales.",
+      "Gestión integral de tu equipo: nóminas, seguros sociales, contratos, altas y bajas. Te asesoramos en convenios colectivos y defensa ante los Juzgados de lo social.",
     features: [
       { text: "Nóminas, seguros sociales y convenios" },
       { text: "Gestión de contratos, altas, bajas e IT" },
-      { text: "Prevención de riesgos laborales" },
+      {
+        text: "Control horario digital con Tictacdicta",
+        href: "https://tictacdicta.es",
+      },
+      { text: "Defensa ante los Juzgados de lo social en temas de despidos, reclamación de cantidad y seguridad social" },
     ],
   },
   {
     icon: Scale,
-    title: "Jurídico Mercantil y Trámites",
+    title: "Jurídico Mercantil",
     description:
-      "Seguridad jurídica y cumplimiento de la normativa mercantil. Constitución de sociedades, altas de autónomos en 24h, protocolo familiar y gestión de la Campaña de la Renta.",
+      "Seguridad jurídica, cumplimiento de la normativa mercantil y mejora constante de estatutos, protocolo familiar y estructura societaria.",
     features: [
-      { text: "Constitución de sociedades y alta de autónomos" },
-      { text: "Protocolo familiar y derecho societario" },
-      { text: "Campaña de Renta y Patrimonio" },
+      { text: "Constitución, disolución y modificaciones societarias" },
+      { text: "Reforma y actualización de estatutos y reglamentos internos" },
+      { text: "Protocolo familiar, estructura societaria y órgano de administración" },
+      { text: "Contratos mercantiles y alianzas estratégicas" },
+    ],
+  },
+  {
+    icon: FileSearch,
+    title: "Revisión Contable",
+    description:
+      "Revisamos tu contabilidad con criterio técnico para detectar errores, mejorar la calidad de la información financiera y darte más control sobre la gestión.",
+    features: [
+      { text: "Revisión periódica de la contabilidad" },
+      { text: "Detección de errores y desviaciones" },
+      { text: "Mejora del control interno y de la gestión administrativa" },
     ],
   },
   {
@@ -79,21 +95,6 @@ const services: Service[] = [
       { text: "Herencias, donaciones y sucesiones" },
       { text: "Gestiones ante organismos públicos" },
       { text: "Certificados y representación ante la Administración" },
-    ],
-  },
-  {
-    icon: Monitor,
-    title: "Transformación Digital",
-    description:
-      "Modernizamos tu empresa: control horario digital, firma digital, gestión documental en la nube, páginas web profesionales, SEO y Google Business Profile.",
-    features: [
-      { text: "Firma digital y certificado electrónico" },
-      {
-        text: "Control horario digital con Tictacdicta — precios especiales",
-        href: "https://tictacdicta.es",
-      },
-      { text: "Web profesional, SEO y Google Business" },
-      { text: "Gestión documental sin papeles" },
     ],
   },
 ];
@@ -137,7 +138,7 @@ export default function ServicesSection() {
                 <h3 className="text-xl font-bold text-navy">{service.title}</h3>
 
                 {/* Description */}
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-medium">
+                <p className="mt-3 text-sm leading-relaxed text-slate-medium">
                   {service.description}
                 </p>
 

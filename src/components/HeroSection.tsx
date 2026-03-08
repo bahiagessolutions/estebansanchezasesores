@@ -51,7 +51,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/70 sm:text-xl"
         >
-          Nos ocupamos de todo el papeleo y optimizamos tus impuestos para que
+          Nos ocupamos de todas las gestiones y optimizamos tus impuestos para que
           tú te enfoques en lo que de verdad importa:{" "}
           <strong className="text-white/90">hacer crecer tu negocio.</strong>
         </motion.p>
